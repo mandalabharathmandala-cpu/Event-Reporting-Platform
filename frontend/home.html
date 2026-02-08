@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventFlow</title>
+    <link rel="stylesheet" href="css/home.css">
+    <!-- Google reCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
+</head>
+<body>
+
+<nav>
+    <h1>EventFlow</h1>
+</nav>
+
+
+<div class="baner" id="banner">
+    <div class="image-row">
+        <div class="user-section">
+            <img class="profile-img" src="assets/images/user.jpg" alt="User">
+            <h4>Participant</h4>
+            <button type="button" id="userLoginBtn">Sign In</button>
+            <button type="button" id="userRegisterBtn">Sign Up</button>
+        </div>
+
+        <div class="admin-section">
+            <img class="profile-img" src="assets/images/admin.jpg" alt="Admin">
+            <h4>Admin</h4>
+            <button type="button" id="adminLoginBtn">Sign In</button>
+            <button type="button" id="adminRegisterBtn">Sign Up</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="signup" style="display:none;">
+    <h1 class="form-title">Register</h1>
+    <form id="registerForm">
+        <input type="hidden" id="registerRole">
+
+        <div class="input-group">
+            <input type="text" placeholder="First Name" name="firstName" required>
+        </div>
+        <div class="input-group">
+            <input type="text" placeholder="Last Name" name="lastName" required>
+        </div>
+        <div class="input-group">
+            <input type="email" placeholder="Email" name="email" required>
+        </div>
+        <div class="input-group">
+            <input type="password" placeholder="Password" name="password" required>
+        </div>
+
+        <button type="submit" class="btn">Sign Up</button>
+    </form>
+
+    <div class="links">
+        <p>Already have an account?</p>
+        <button type="button" id="goToSignIn">Sign In</button>
+    </div>
+</div>
+
+
+<div class="container" id="signIn" style="display:none;">
+    <h1 class="form-title">Sign In</h1>
+    <form id="loginForm">
+        <input type="hidden" id="loginRole">
+        <input type="hidden" id="captchaToken" name="captchaToken">
+
+        <div class="input-group">
+            <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+
+        <div class="captcha-notice">
+            <small>This site is protected by reCAPTCHA and the Google
+                <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+            </small>
+        </div>
+
+        <button type="submit" class="btn">Sign In</button>
+    </form>
+
+    <div class="links">
+        <p>Don't have an account?</p>
+        <button type="button" id="goToSignUp">Sign Up</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 EventFlow. All rights reserved.</p>
+</footer>
+
+<script src="js/home.js"></script>
+</body>
+</html>
