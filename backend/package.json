@@ -1,8 +1,8 @@
 {
-  "name": "backend",
+  "name": "event-reporting-platform-backend",
   "version": "1.0.0",
-  "description": "Event-Booking and Automatic report generator",
-  "main": "index.js",
+  "description": "Event Reporting Platform - RESTful API for event booking and management with security features",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Prashanth-DevO/Event-Management-and-Reporting-System.git"
+    "url": "https://github.com/mandalabharathmandala-cpu/Event-Reporting-Platform.git"
   },
-  "author": "PRASHANTH SAKAPURAM",
+  "author": "Bharath Mandala",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Prashanth-DevO/Event-Management-and-Reporting-System/issues"
+    "url": "https://github.com/mandalabharathmandala-cpu/Event-Reporting-Platform/issues"
   },
-  "homepage": "https://github.com/Prashanth-DevO/Event-Management-and-Reporting-System#readme",
+  "homepage": "https://github.com/mandalabharathmandala-cpu/Event-Reporting-Platform#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
@@ -26,3 +26,4 @@
     "nodemon": "^3.1.11"
   }
 }
+
