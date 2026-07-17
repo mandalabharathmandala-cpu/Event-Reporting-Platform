@@ -268,8 +268,7 @@ For issues, questions, or suggestions:
 
 ## Authors
 
-- **Bharath Mandala** - Event-Reporting-Platform
-- Based on Event-Management-and-Reporting-System by Prashanth Sakapuram
+- **Mandala Bharadwaj** - Event-Reporting-Platform
 
 ---
 
